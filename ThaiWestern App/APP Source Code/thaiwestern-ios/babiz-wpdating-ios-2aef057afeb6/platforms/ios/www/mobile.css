@@ -1,0 +1,56 @@
+@charset "utf-8";
+/* CSS Document */
+
+@media screen and (max-device-width: 480px){
+.ui-content{width:auto;}
+.dsp_home_full {
+width: auto;
+float: left;
+text-align: center;
+list-style: none;
+
+padding: 0px;
+}
+dsp_home_full li {
+float: left;
+padding: 10px;
+width: 21%;
+border: 1px solid gray;
+list-style: none;
+margin-left: 26px;
+margin-bottom: 10px;
+}
+}
+.mam_btn_reg{
+	background-color: #54C7FD!important;
+}
+/*--- Main CSS here ---*/
+
+/*------------------------------------*\
+$IPHONE
+\*------------------------------------*/
+@media screen and (max-device-width: 480px){
+body{
+-webkit-text-size-adjust:none;
+font-family: 'Open Sans', sans-serif;
+
+}
+.dsp_home_full li {
+float: left;
+margin: 1.5% !important;
+padding: 12px 2px !important;
+width: 30% !important;
+border:1px solid gray;
+list-style: none;
+box-sizing: border-box;
+}
+.dsp_home_icon span {
+    font-size: 11px;
+}
+.dsp_home_icon span {
+    float: left;
+    width: 100%;
+    text-align: center;
+}
+}
+

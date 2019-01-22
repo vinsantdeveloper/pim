@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="app_name">WPDating App</string>
+    <string name="launcher_name">@string/app_name</string>
+    <string name="activity_name">@string/launcher_name</string>
+    <string name="public_key">MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAn9TiDmtj5bm4b7QoX7V+bKHry2cC3LkE4/sNxQh/Xv0fZLzG35FoeNtgUH3em9PfQHOAGhOkc86s5fOieXnh2yt3bXlrgbiVHpPerbxUEFRAwc3eJ4n5ixG/cZiIN2eViUWViPUZK/lqQvBP1WA0xH3M7Tyxzea3+nARaCmePq3mxHseMkrgAAFaRtgOCg5SYBFQXqBrxDDzneh0GAAkyEPjFh+qFaXjI/M0lmJI9oDoUJqDairc/9+7L14YnAvlFUdskszKV3IkaaesXNK768YiMncoJnU0l9X8u/D4FRGUXCV5asYsxsR9nmFLQPozHXmTXRUzvs5fpgL7i0trFwIDAQAB</string>
+</resources>

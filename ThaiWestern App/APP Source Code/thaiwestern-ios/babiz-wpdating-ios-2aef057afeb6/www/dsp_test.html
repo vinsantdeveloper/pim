@@ -1,0 +1,60 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	<script type="text/javascript" src="http://code.jquery.com/jquery-1.7.js"></script>
+	<script type="text/javascript">
+	$.fn.clickSlide=function(pagesDiv){
+		var width=$(pagesDiv).width(),
+			pages=$(pagesDiv).children().css({width:width,minWidth:width})
+		pages.hide().eq(0).show()
+		$(pagesDiv).width(width*2)
+		return this.click(function(){
+			var $visible=pages.filter(':visible')
+			var $page=$($(this).attr('href'))
+			if (!$page.is(':visible')){
+				$page.show()
+				$(pagesDiv).stop(true,false)
+					.css('left',-$visible.position().left)
+					.animate({left:-$page.position().left},'slow',function(){
+						$visible.hide()
+						$(this).css('left',0)
+					})
+			}
+			return false
+		})
+		
+	}
+	$(function(){
+		$('.menu a').clickSlide('#mypages')
+	})
+	</script>
+	<title>slide</title>
+	<style type="text/css">
+	#mypages { position: relative; }
+	#mypages>div
+	{
+		display: table-cell;
+		margin: 0;
+		padding: 0;
+		border: 0;
+	}
+	</style>
+</head>
+<body>
+<div class="menu">
+	<a href="#page1">Goto page 1</a> <a href="#page2">Goto page 2</a> <a href="#page3">Goto page 3</a>
+	<a href="#page4">Goto page 4</a> <a href="#page5">Goto page 5</a> <a href="#page6">Goto page 6</a>
+</div>
+	<div id="mypages">
+		<div style="background:red;color:white" id="page1">1...</div>
+		<div style="background:orange" id="page2">2...</div>
+		<div style="background:yellow" id="page3">3...</div>
+		<div style="background:green;color:white" id="page4">4...</div>
+		<div style="background:blue;color:white" id="page5">5...</div>
+		<div style="background:purple;color:white" id="page6">6...</div>
+	</div>
+</body>
+</html>
+
