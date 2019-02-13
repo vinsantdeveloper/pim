@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='utf-8'?>
-<widget id="com.karma-dating.karmadating" version="1.3" xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0">
+<widget id="com.wpdating.wpdatingapp" version="1.3" xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0">
     <feature name="LocalStorage">
         <param name="ios-package" value="CDVLocalStorage" />
     </feature>
@@ -44,7 +44,7 @@
     <author email="support@wpdating.com" href="https://wpdating.com">
         WPDating Team
     </author>
-    <content src="site.html" />
+    <content src="index.html" />
     <access origin="*" />
     <icon height="57" src="res/icon/ios/Icon.png" width="57" />
     <icon height="114" src="res/icon/ios/Icon@2x.png" width="114" />
@@ -62,6 +62,7 @@
     <icon height="80" src="res/icon/ios/Icon-Small-40@2x.png" width="80" />
     <icon height="50" src="res/icon/ios/Icon-Small-50.png" width="50" />
     <icon height="100" src="res/icon/ios/Icon-Small-50@2x.png" width="100" />
+    <icon height="1024" src="res/icon/ios/MainIcon.png" width="1024" />
     <splash height="1004" src="res/splash/ios/Default.png" width="768" />
     <splash height="480" src="res/splash/ios/Default~iphone.png" width="320" />
     <splash height="960" src="res/splash/ios/Default@2x~iphone_640x960.png" width="640" />

@@ -275,7 +275,7 @@ else
 $(document).on('pagebeforeshow', '#page-login', function()
 {
     
-    //localStorage.setItem("siteName","http://dsdev.biz"); //for personalization
+    localStorage.setItem("siteName","https://www.thaiwestern.com"); //for personalization
     localStorage.setItem("userId",0);
     var siteName = localStorage.getItem("siteName");  
     
